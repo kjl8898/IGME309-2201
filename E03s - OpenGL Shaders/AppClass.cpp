@@ -74,13 +74,16 @@ void AppClass::InitVariables(void)
 {
 	std::vector<glm::vec3> lVertex;
 	//vertex 1
-	lVertex.push_back(glm::vec3(-1.0f, -1.0f, 0.0f)); //position
+	lVertex.push_back(glm::vec3(-0.5f, -0.5f, 0.0f)); //position
 	lVertex.push_back(glm::vec3(1.0f, 0.0f, 0.0f)); //color
 	//vertex 2
-	lVertex.push_back(glm::vec3(1.0f, -1.0f, 0.0f)); //position
+	lVertex.push_back(glm::vec3(0.5f, -0.5f, 0.0f)); //position
 	lVertex.push_back(glm::vec3(0.0f, 1.0f, 0.0f)); //color
 	//vertex 3
-	lVertex.push_back(glm::vec3(0.0f, 1.0f, 0.0f)); //position
+	lVertex.push_back(glm::vec3(-0.5f, 0.5f, 0.0f)); //position
+	lVertex.push_back(glm::vec3(0.0f, 0.0f, 1.0f)); //color
+
+	lVertex.push_back(glm::vec3(0.5f, 0.5f, 0.0f)); //position
 	lVertex.push_back(glm::vec3(0.0f, 0.0f, 1.0f)); //color
 	
 	glGenVertexArrays(1, &m_uVAO);//Generate vertex array object
